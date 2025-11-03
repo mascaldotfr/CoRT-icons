@@ -15,6 +15,20 @@ The icons are used as fair use, and are property of NGE.
 - The Python 3 `pillow` (v10 tested) [module](https://pillow.readthedocs.io/en/stable/installation.html#basic-installation)
 - A valid `trainerdata.json`
 
+## Installing pillow
+
+Note that you only need to do it once.
+
+### Windows / Mac
+
+```
+pip install -r requirements.txt
+```
+
+### Linux
+
+You can use pillow from your package manager. (Debian: `python3-pillow`)
+
 ## Basic Usage
 
 - Open a terminal
