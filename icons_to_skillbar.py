@@ -42,5 +42,6 @@ for discipline in data["disciplines"]:
                                  resample=Image.LANCZOS)
         skillbar.paste(img_resized, (offset, 0))
 
-    skillbar.convert("RGB").save(f"{target_skillbars}/{discipline.replace(' ','')}.webp",
-                                 quality=60)
+    destfile = f"{target_skillbars}/{discipline.replace(' ','')}.webp"
+    skillbar.convert("RGB").save(destfile, quality=60)
+    print("Created", destfile)
